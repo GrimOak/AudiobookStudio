@@ -1,0 +1,8 @@
+streamlit
+edge-tts
+ebooklib
+beautifulsoup4
+pypdf
+python-docx
+striprtf
+odfpy
