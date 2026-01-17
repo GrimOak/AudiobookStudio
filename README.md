@@ -47,8 +47,11 @@ Online Only: This hits the Microsoft servers to generate audio, so you need an a
 
 Speed: A standard novel takes about 25-30 minutes to convert. given the fact that you are converting over 10s to 100s of thousands of words into audio.
 
+REAL WORLD TEST - 700k words took 9 hours to generate 68 hours of audiobook
+
 Don't open the file while it's running: The script appends binary data to the MP3 in real-time. If you try to play it while it's converting, it might lock the file and crash the script.
 
 # License
 
 be free. if you create new features or build off of this program, just credit me or smt. thanks!
+
