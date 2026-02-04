@@ -1,6 +1,40 @@
-version: '3'
+name: Epub2EbookGenerator
 services:
-  epub-to-mp3:
-    build: .
+  Epub2EbookGenerator:
+    cpu_shares: 10
+    command: []
+    container_name: Epub2EbookGenerator
+    deploy:
+      resources:
+        limits:
+          memory: 8766486009
+        reservations:
+          devices: []
+    environment:
+      - PGID=1000
+      - PUID=1000
+      - TZ=America/Toronto
+    image: arkoto123/epub-to-mp3:latest
     ports:
-      - "8501:8501"
+      - target: 8501
+        published: "8501"
+        protocol: tcp
+    restart: unless-stopped
+    volumes: []
+    devices: []
+    cap_add: []
+    network_mode: bridge
+    privileged: false
+x-casaos:
+  author: self
+  category: self
+  hostname: ""
+  icon: ""
+  index: /
+  is_uncontrolled: false
+  port_map: "8501"
+  scheme: http
+  store_app_id: Epub2EbookGenerator
+  title:
+    custom: Epub2Ebook Generator
+    en_us: Epub2EbookGenerator
